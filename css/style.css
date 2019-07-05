@@ -1,49 +1,56 @@
-.red{
-    background-color: red;
+
+.grey{
+    background-color: #e8eef3;
 }
 
-.green{
-    background-color: green;
-}
 
-.blue{
-    background-color: blue;
-}
+.article{
+    display: flex;
+    }
 
-.yellow{
-    background-color: yellow;
-}
 
-.title {
-    background-color: red;
-}
+
 
 .title h1{
     margin-left:auto;
     margin-right: auto;
     width: max-content;
+    color: rgb(74, 74, 240);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 
 .content > div {
-    min-height: 80vh;
+    min-height: 20vh;
 }
 
-
-h3{
+h1{
+    font-size: 5vw;
+}
+.w-level{
     margin : 0 ;
-    padding : 0 ;
+    padding : 10px ;
     margin-left: auto;
     margin-right:auto;
     width: max-content;
+    font-size: 2.4vw;
+    font-family: cursive;
+    color: rgb(11, 11, 105);
 }
 
 .course-box {
-    margin: 15px;
-    background-color: red;
     width: 90%;
-    height:250px;
-   
+    height:160px;
+    font-family: cursive;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+}
+
+.levels{
+    margin-bottom: 15px;
 }
 
 
@@ -60,4 +67,91 @@ h3{
       
   }
 }
+
+.course-box >div{
+    height: 100%;
+    width: 100%;
+    padding-top: 1.5vw;
+}
+
+.course-box{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.resize img{
+    height:auto;
+    width: 100%;
+
+}
+
+
+.title1{
+    margin-left:auto;
+    margin-right: auto;
+    width: max-content;
+    color: green;
+    font-weight: bolder;
+    font-size: 1.8vw;
+}
+
+.article .img img{
+    width: 100%;
+    height: auto;
+
+}
+
+@media only screen and (max-width: 1190px)
+{
+.article {
+    display: block;
+}}
+
+.article p{
+    padding: 10px;
+    flex: 1;
+}
+
+.article .img {
+    flex: 1;
+}
+
+
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: auto;
+
+}
+
+.logofix {
+    width: 130px;
+    height:130px;;
+    margin: 12px;
+}
+.logofix img{
+    height: 100%;
+    width: 100%
+}
+
+
+@media (min-width: 575px)
+{
+    .logos{
+        display: block;
+         
+    }
+}
+
+@media (max-width: 575px)
+{
+    .course-box{
+        width: 100vw;
+        height: auto;
+        font-size: 5vw;
+        }
+}
+
 
